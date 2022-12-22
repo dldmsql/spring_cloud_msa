@@ -1,6 +1,7 @@
 package com.example.userservice.dto;
 
 import java.util.Date;
+import java.util.List;
 import lombok.Data;
 
 @Data
@@ -11,4 +12,5 @@ public class UserDto {
   private String userId; // UUID로 지정
   private Date createdAt; // meta 데이터
   private String encryptedPwd; // 암호화처리를 한 뒤에 저장
+  private List<ResponseOrder> orders;
 }
